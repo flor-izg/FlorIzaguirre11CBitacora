@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor de María Izaguirre Lara</title>
+    <link rel="icon" type="image/png" href="Recursos/img/LogoC.png">
+    <style>
+        /* Estilos Generales */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Encabezado con efecto neón */
+        header {
+            padding: 40px 20px;
+            background-color: rgb(158, 174, 219);
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #fff;
+            text-shadow:
+                0 0 5px #bc13fe,
+                0 0 15px #bc13fe,
+                0 0 30px #bc13fe;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header h2, header h3 {
+            margin: 10px 0 0;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        /* Contenedor Principal */
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0 25px;
+            color: #414975;
+            border-bottom: 2px solid #bc13fe;
+            padding-bottom: 10px;
+        }
+
+        /* Tarjetas de la Bitácora */
+        .semana {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .semana:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            border-color: #bc13fe;
+        }
+
+        .semana h3 {
+            margin-top: 0;
+            color: #bc13fe;
+        }
+
+        /* Sección de PDF */
+        .contenedor-pdf {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 40px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .visor-pdf {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            margin-top: 15px;
+        }
+
+        .btn-descarga {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #bc13fe;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-descarga:hover {
+            background-color: #8e0dbf;
+        }
+
+        /* Footer Estilizado */
+        footer {
+            background-color: rgb(176, 194, 211);
+            padding: 25px 50px;
+            border-top: 2px solid rgb(65, 73, 117);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-social {
+            font-weight: bold;
+            color: #414975;
+            font-size: 1.1rem;
+        }
+
+        .logo-colegio {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .logo-colegio:hover {
+            transform: scale(1.1);
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-box input {
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .search-box input:focus {
+            border-color: #bc13fe;
+        }
+
+        /* Adaptación para Celulares */
+        @media(max-width: 600px){
+            footer {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+                padding: 30px 20px;
+            }
+            .visor-pdf {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Undécimo</h1>
+            <h2>Sección: C</h2>
+            <h3>Flor de María Izaguirre Lara</h3>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">Bitácora de Actividades</h2>
+
+        <div class="semana">
+            <h3>Semana 1: Creación de página web</h3>
+            <p>En esta semana aprendimos a utilizar Visual Studio Code e iniciamos la programación de nuestra página web, estructurando el esqueleto básico con etiquetas HTML5.</p>
+        </div>
+
+        <div class="semana">
+            <h3>Semana 2: Personalizar página web</h3>
+            <p>Personalizamos nuestra página agregando estilos CSS (Cascading Style Sheets) para definir colores, márgenes y efectos visuales como el sombreado de texto neón.</p>
+        </div>
+
+        <h2 class="section-title">Documentación Oficial</h2>
+
+        <div class="contenedor-pdf">
+            <h3>Visor de Documento</h3>
+            <p>Puedes previsualizar el documento de soporte aquí mismo o descargarlo para leerlo más tarde.</p>
+           
+            <embed src="Recursos/pdf/Introducción Arduino F (2).pdf" type="application/pdf" class="visor-pdf" />
+
+            <div style="text-align: center;">
+                <a href="Recursos/pdf/Introducción Arduino F (2).pdfs" download class="btn-descarga">
+                    📥 Descargar Archivo PDF
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <span class="footer-social">@iza._guirre</span>
+       
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png"
+            alt="Logo Colegio"
+            class="logo-colegio"
+            height="60">
+        <div class="search-box">
+            <label for="buscar">Buscar:</label>
+            <input type="text" id="buscar" placeholder="¿Qué buscas?">
+        </div>
+    </footer>
+</body>
+</html>
